@@ -3,14 +3,29 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    //return 'dsds';
-   // return view('welcome');//
+    return view('welcome');
 });
-route::get('/product', function(){
-    //return ('this is product page');//
-   // return view('product', ['name' => 'shoes']);//
+route::get('/about', function(){
+    return view('about');
 });
-route::get('/multi_page', function(){
-    //return ('this is multi_page');//
-    return view('multi_page');
+route::get('/contact', function(){
+    return view('contact');
+});
+route::get('/pricing', function(){
+    return view('pricing');
+});
+route::get('/portfolio-item', function(){
+    return view('portfolio-item');
+});
+route::get('/portfolio-overview', function(){
+    return view('portfolio-overview');
+});
+route::get('/bloghome', function(){
+    return view('bloghome');
+});
+route::get('/blogpost', function(){
+    return view('blogpost');
+});
+route::get('/faq', function(){
+    return view('faq');
 });
